@@ -14,7 +14,8 @@ echo "::group:: Install Ubuntu Desktop"
 apt-get update
 
 # Install ubuntu-desktop
-apt-get install -y ubuntu-desktop
+export DEBIAN_FRONTEND=noninteractive
+apt-get install -y ubuntu-desktop-minimal
 
 echo "::endgroup::"
 
