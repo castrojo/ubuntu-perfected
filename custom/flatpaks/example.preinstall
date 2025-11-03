@@ -1,0 +1,5 @@
+# Example flatpak preinstall file
+# Add flatpak application IDs here, one per line
+# Example:
+# org.mozilla.firefox
+# org.gnome.Calculator
