@@ -1,0 +1,5 @@
+-----BEGIN PUBLIC KEY-----
+PLACEHOLDER - Replace this with your actual cosign public key
+Generate one using: cosign generate-key-pair
+See README.md for detailed setup instructions
+-----END PUBLIC KEY-----
