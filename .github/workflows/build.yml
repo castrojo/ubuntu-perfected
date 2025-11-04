@@ -116,7 +116,7 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ env.DEFAULT_TAG }}
           labels: ${{ steps.metadata.outputs.labels }}
-          oci: false
+          oci: true
 
       # Rechunk (OPTIONAL): Rechunker optimizes container image layers for better resumability and fixes some distribution errors.
       # It doesn't make downloads faster but provides more reliable image distribution.
