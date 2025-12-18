@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+	"net"
+	"time"
+)
+
+func scanPort(host string, port string) {
+	conn, err := net.DialTimeout("tcp", net.JoinHostPort(host, port), 1*time.Second)
+	if err == nil {
+		fmt.Println("[OPEN] Port", port)
+		conn.Close()
+	}
+}
+
+func main() {
+	host := "127.0.0.1"
+	fmt.Println("Scanning localhost...")
+
+	for i := 1; i <= 1024; i++ {
+		scanPort(host, fmt.Sprintf("%d", i))
+	}
+}
